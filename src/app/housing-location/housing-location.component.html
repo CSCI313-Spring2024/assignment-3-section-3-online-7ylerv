@@ -1,0 +1,15 @@
+<p>housing-location works!</p>
+<section class="listing"> 
+    <img 
+    class="listing-photo" 
+    [src]="Housinglocation.photo" 
+    alt="Exterior photo of {{ Housinglocation.name }}" 
+    crossorigin 
+    /> 
+    <h5 class="listing-heading">{{ Housinglocation.name }}</h5> 
+    <p class="listing-location"> 
+    {{ Housinglocation.city }}, {{ Housinglocation.state }} 
+    </p> 
+    <!-- <a routerLink="details">Learn More</a> --> 
+    <a RouterLink="['/details', Housinglocation.id]">Learn More</a> 
+    </section>
